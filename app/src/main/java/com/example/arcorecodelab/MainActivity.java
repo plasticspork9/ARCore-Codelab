@@ -181,6 +181,12 @@ public class MainActivity extends AppCompatActivity {
         igloo.setContentDescription("igloo");
         igloo.setOnClickListener(view ->{addObject(Uri.parse("igloo.sfb"));});
         gallery.addView(igloo);
+
+        ImageView waterBottle = new ImageView(this);
+        igloo.setImageResource(R.drawable.water_bottle);
+        igloo.setContentDescription("water bottle");
+        igloo.setOnClickListener(view ->{addObject(Uri.parse("Water_Bottle_01.sfb"));});
+        gallery.addView(waterBottle);
     }
 
     private void addObject(Uri model) {
